@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+<title>3D Viewer v1.0 Manual</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="3D Viewer v1.0 Manual">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="../index.html#dir" title="(dir)">
+<link rel="next" href="_00d0_0092_00d0_00be_00d0_00b7_00d0_00bc_00d0_00be_00d0_00b6_00d0_00bd_00d0_00be_00d1_0081_00d1_0082_00d0_00b8-_00d0_00bf_00d1_0080_00d0_00be_00d0_00b3_00d1_0080_00d0_00b0_00d0_00bc_00d0_00bc_00d1_008b.html#g_t_00d0_0092_00d0_00be_00d0_00b7_00d0_00bc_00d0_00be_00d0_00b6_00d0_00bd_00d0_00be_00d1_0081_00d1_0082_00d0_00b8-_00d0_00bf_00d1_0080_00d0_00be_00d0_00b3_00d1_0080_00d0_00b0_00d0_00bc_00d0_00bc_00d1_008b" title="Возможности программы">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<!--
+This is a manual for 3D Viewer v1.0
+
+Copyright (C) 2023 oceanusp -->
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Top"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="_00d0_0092_00d0_00be_00d0_00b7_00d0_00bc_00d0_00be_00d0_00b6_00d0_00bd_00d0_00be_00d1_0081_00d1_0082_00d0_00b8-_00d0_00bf_00d1_0080_00d0_00be_00d0_00b3_00d1_0080_00d0_00b0_00d0_00bc_00d0_00bc_00d1_008b.html#g_t_00d0_0092_00d0_00be_00d0_00b7_00d0_00bc_00d0_00be_00d0_00b6_00d0_00bd_00d0_00be_00d1_0081_00d1_0082_00d0_00b8-_00d0_00bf_00d1_0080_00d0_00be_00d0_00b3_00d1_0080_00d0_00b0_00d0_00bc_00d0_00bc_00d1_008b">Возможности программы</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="../index.html#dir">(dir)</a>
+<hr>
+</div>
+
+<h2 class="unnumbered">Описание проекта 3D Viewer v1.0</h2>
+
+<p>Краткое описание работы программы 3D Viewer v1.0 и её функционала.
+
+   <p>Программа разработанна в рамках образовательного проекта в Shcool21 от Сбер b представляет собой инструмент для просмотра и взаимодействия с трехмерными моделями в формате файлов *.obj.
+
+   <p>Визуализация моделей реализована с использованием библиотеки OpenGL. Для достижения эффекта перемещения и манипулирования вершинами модели используются аффинные преобразования. 
+      После применения этих преобразований новые координаты вершин передаются на отрисовку в OpenGL. 
+      Визуализация в OpenGL осуществляется на центральном процессоре, и шейдеры в данной программе не используются.
+      3D Viewer обладает функциональностью сохранения изображений. Возможность создания снимка экрана (ScreenShot) предоставляет пользователю способ зафиксировать текущее состояние модели в выбранной директории.
+Проект 3D Viewer v1.0 был разработан с учетом образовательных целей и служит практическим примером работы с 3D-моделями и OpenGL в среде программирования. Fronted написан на языке С++, Backend на языке С.
+
+   <p>В этом описании можно найти следующие разделы:
+
+<ul class="menu">
+<li><a accesskey="1" href="_00d0_0092_00d0_00be_00d0_00b7_00d0_00bc_00d0_00be_00d0_00b6_00d0_00bd_00d0_00be_00d1_0081_00d1_0082_00d0_00b8-_00d0_00bf_00d1_0080_00d0_00be_00d0_00b3_00d1_0080_00d0_00b0_00d0_00bc_00d0_00bc_00d1_008b.html#g_t_00d0_0092_00d0_00be_00d0_00b7_00d0_00bc_00d0_00be_00d0_00b6_00d0_00bd_00d0_00be_00d1_0081_00d1_0082_00d0_00b8-_00d0_00bf_00d1_0080_00d0_00be_00d0_00b3_00d1_0080_00d0_00b0_00d0_00bc_00d0_00bc_00d1_008b">Возможности программы</a>:  основные возможности программы. 
+<li><a accesskey="2" href="_00d0_009e_00d0_00bf_00d0_00b8_00d1_0081_00d0_00b0_00d0_00bd_00d0_00b8_00d0_00b5-_00d0_00be_00d1_0081_00d0_00bd_00d0_00be_00d0_00b2_00d0_00bd_00d0_00be_00d0_00b3_00d0_00be-_00d0_00be_00d0_00ba_00d0_00bd_00d0_00b0.html#g_t_00d0_009e_00d0_00bf_00d0_00b8_00d1_0081_00d0_00b0_00d0_00bd_00d0_00b8_00d0_00b5-_00d0_00be_00d1_0081_00d0_00bd_00d0_00be_00d0_00b2_00d0_00bd_00d0_00be_00d0_00b3_00d0_00be-_00d0_00be_00d0_00ba_00d0_00bd_00d0_00b0">Описание основного окна</a>:  описание элементов основного окна. 
+<li><a accesskey="3" href="_00d0_009e_00d0_00bf_00d0_00b8_00d1_0081_00d0_00b0_00d0_00bd_00d0_00b8_00d0_00b5-menu-bar.html#g_t_00d0_009e_00d0_00bf_00d0_00b8_00d1_0081_00d0_00b0_00d0_00bd_00d0_00b8_00d0_00b5-menu-bar">Описание menu bar</a>:  описание опций menu bar. 
+<li><a accesskey="4" href="_00d0_00a0_00d0_00b0_00d0_00b7_00d1_0080_00d0_00b0_00d0_00b1_00d0_00be_00d1_0082_00d1_0087_00d0_00b8_00d0_00ba_00d0_00b8.html#g_t_00d0_00a0_00d0_00b0_00d0_00b7_00d1_0080_00d0_00b0_00d0_00b1_00d0_00be_00d1_0082_00d1_0087_00d0_00b8_00d0_00ba_00d0_00b8">Разработчики</a>:  информация о разработчиках. 
+</ul>
+
+<img src="https://sun9-49.userapi.com/impg/mvC0dtOvww6510BzqNTDd6fl7E2Hr22_RLJH4A/yOSnshkPVws.jpg?size=2560x1764&quality=95&sign=411326fde527d337d084b390398150a6&type=album" alt="SmartCalc" width="1795" height="1205" />
+   </body></html>
